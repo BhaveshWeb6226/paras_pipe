@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agriculture Casing Pipes</title>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+</head>
+<style>
+  #a:hover li>ul {
+    display: inline-block;
+    position: fixed;
+    left: 57%;
+  }
+
+  #a>li {
+    margin-top: -32px;
+  }
+
+  #a>li>ul {
+    display: none;
+  }
+
+  a {
+    color: black;
+  }
+
+  #a>li>ul>li {
+    width: 230px;
+    height: 220px;
+    padding-left: 50px;
+    background-color: white;
+    box-shadow: 2px 2px 3px 3px black;
+  }
+
+  #h2 {
+    color: black;
+    width: 160px;
+    border-bottom: 1px solid gray;
+  }
+
+  #h2:hover {
+    color: rgb(227, 49, 49);
+  }
+
+  #b:hover li>ul {
+    display: inline-block;
+    position: fixed;
+    left: 15%;
+  }
+
+  #b>li {
+    margin-top: -32px;
+  }
+
+  #b>li>ul {
+    display: none;
+  }
+
+  a {
+    color: black;
+    padding-right: 50px;
+  }
+
+  #b>li>ul>li {
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    right: 50px;
+    background-color: white;
+    box-shadow: 2px 2px 3px 3px black;
+
+  }
+
+  .a1 {
+    margin-top: -70px;
+  }
+
+  #a1 {
+    color: brown;
+  }
+
+  #b1 {
+    margin-top: -10px;
+  }
+
+  .dropdown-menu {
+    border: none;
+  }
+
+  .dropdown-menu li {
+    position: relative;
+  }
+
+  .dropdown-menu .dropdown-submenu {
+    display: none;
+    top: 25px;
+    width: 200px;
+    border: none;
+    padding-left: 25px;
+  }
+
+  .dropdown-menu>li:hover>.dropdown-submenu {
+    display: block;
+    width: 250px;
+  }
+
+  #offcanvasRight {
+    width: 300px;
+    padding-left: 15px;
+  }
+
+  .btn {
+    border: none;
+  }
+
+  #o1 {
+    font-size: large;
+    padding-left: 10px;
+    border-bottom: 0.5px solid rgb(205, 203, 203);
+  }
+
+  #o1:hover {
+    color: rgb(222, 53, 53);
+  }
+
+  #o2 {
+    font-size: large;
+  }
+
+  #o2:hover {
+    color: rgb(222, 53, 53);
+  }
+
+  #o3 {
+    border-bottom: 0.5px solid rgb(205, 203, 203);
+  }
+
+  #o4:hover {
+    color: rgb(222, 53, 53);
+    background-color: rgb(189, 177, 177);
+    width: 230px;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  #o5:hover {
+    color: rgb(222, 53, 53);
+  }
+
+  #o6 {
+    margin-left: -12px;
+  }
+
+  #o6:hover {
+    color: rgb(222, 53, 53);
+    background-color: rgb(189, 177, 177);
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  #o7:hover {
+    color: rgb(222, 53, 53);
+    background-color: rgb(189, 177, 177);
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  #h1 {
+    font-size: 13px;
+    margin-top: 5px;
+    color: black;
+    border-bottom: 1px solid gray;
+  }
+
+  #h1:hover {
+    color: rgb(227, 49, 49);
+    font-size: 14px;
+    padding-left: 10px;
+  }
+
+  #h3:hover {
+    color: rgb(222, 53, 53);
+    border-width: 200px;
+    border-bottom: 2px solid rgb(88, 25, 25);
+  }
+
+  #h4 {
+    box-shadow: 2px 2px 3px 3px black;
+    text-align: justify;
+  }
+
+  .g {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+  }
+
+  #g6 {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(59, 58, 58);
+  }
+
+  #g6:hover{
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    background-color: brown;
+    color: black;
+  }
+
+  .accordion-item {
+    width: 350px;
+    border: none;
+  }
+
+  #i1:hover {
+    opacity: 0.9;
+    background-color: rgb(245, 113, 93);
+  }
+
+  .c2 {
+    display: none;
+  }
+
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
+</style>
+
+<body>
+
+  <button type="button" class="btn btn-secondary btn-floating btn-lg" id="btn-back-to-top">
+    <ion-icon name="arrow-up-sharp"></ion-icon>
+  </button>
+
+  <script>
+    //Get the button
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary z-3">
+    <div class="container-fluid container">
+      <a class="navbar-brand" href="#"><img src="paras logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" aria-label="Toggle navigation" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"><b id="h3">Home</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="A1.html">
+              <ul id="a" style="list-style-type: none;">
+                <li><b id="h3">About Us</b>
+                  <ul style="list-style-type: none;">
+                    <li>
+                      <a class="nav-link" href="A1.html" id="h2"><b>Paras Group</b></a>
+                      <a class="nav-link" href="A2.html" id="h2"><b>Board of Directors</b></a>
+                      <a class="nav-link" href="A3.html" id="h2"><b>Facilities</b></a>
+                      <a class="nav-link" href="A4.html" id="h2"><b>Awards</b></a> <br>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Our Products.html">
+              <ul id="b" style="list-style-type: none;">
+                <li><b id="h3">Our Products</b>
+                  <ul style="list-style-type: none;">
+                    <li>
+                      <div class="container">
+                        <div class="a1" style="width: 1100px; height: 600px;">
+                          <div class="row"> <br>
+                            <div class="col" id="b1" style="margin-top: -15px;">
+                              <a class="nav-link" href="O1.html" id="a1"><b>Plumbing System</b></a>
+                              <a class="nav-link" href="O2.html" id="h1">CPVC Plumbing System</a>
+                              <a class="nav-link" href="O3.html" id="h1">uPVC Pipes & Fittings</a>
+                              <a class="nav-link" href="O4.html" id="h1">uPVC SWR DRAINAGE SYSTEM</a>
+                              <a class="nav-link" href="O5.html" id="h1"> Eco Drain Underground Drainage System</a>
+                            </div>
+                            <div class="col">
+                              <a class="nav-link" href="O6.html" id="a1"><b>Agriculture Applications</b></a>
+                              <a class="nav-link" href="O7.html" id="h1">PVC Pipes & Fittings </a>
+                              <a class="nav-link" href="O8.html" id="h1">Drip Irrigation System </a>
+                              <a class="nav-link" href="O9.html" id="h1"> Sprinkler Irrigation System</a>
+                              <a class="nav-link" href="O10.html" id="h1">Column Pipes for Submersible Pumps</a>
+                              <a class="nav-link" href="O11.html" id="h1">Casing Pipes</a>
+                              <a class="nav-link" href="O12.html" id="h1">HDPE Pipes</a>
+                            </div>
+                            <div class="col">
+                              <a class="nav-link" href="O13.html" id="a1"><b>Hose Pipes</b></a>
+                              <a class="nav-link" href="O14.html" id="h1">Soft Garden Tubing Pipes</a>
+                              <a class="nav-link" href="O15.html" id="h1">PVC Suction Pipes</a>
+                              <a class="nav-link" href="O16.html" id="h1">PVC Braided Pipes</a>
+                            </div>
+                            <div class="col">
+                              <a class="nav-link" href="O17.html" id="a1"><b>Agriculture Implements</b></a>
+                              <a class="nav-link" href="O18.html" id="h1">Paras Plough Four Bullocks</a>
+                              <a class="nav-link" href="O19.html" id="h1">Paras Balraj Plough</a>
+                              <a class="nav-link" href="O20.html" id="h1">Paras Plough Ajeet</a>
+                              <a class="nav-link" href="O21.html" id="h1">Paras Chaff Cutter</a>
+                              <a class="nav-link" href="O22.html" id="h1">Paras Kakari</a>
+                              <a class="nav-link" href="O23.html" id="h1">Paras One Furrow - Reversible Plough</a>
+                              <a class="nav-link" href="O24.html" id="h1">Paras Two Furrow - Reversible Plough</a>
+                              <a class="nav-link" href="O25.html" id="h1">Paras Leveller (Farandi)</a>
+                              <a class="nav-link" href="O26.html" id="h1">Paras Two Furrow Surry Ridger</a>
+                              <a class="nav-link" href="O27.html" id="h1">Paras Panji (Heavy Duty)</a>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <a class="nav-link" href="O28.html" id="a1"><b>Electrical Pipes</b></a>
+                              <a class="nav-link" href="O29.html" id="h1">Conduit Pipes & Fittings</a> <br>
+                            </div>
+                            <div class="col">
+                              <a class="nav-link" href="O30.html" id="a1"><b>Blow Moulding Water Storage Tank</b></a>
+                            </div>
+                            <div class="col">
+                              <a class="nav-link" href="O31.html" id="a1"><b>Household Products</b></a>
+                            </div>
+                            <div class="col">
+                              <a class="nav-link" href="O32.html" id="a1"><b>Cleaning Products</b></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </a>
+          </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li class="nav-item">
+            <a class="nav-link" href="Contact Us.html"><b id="h3">Contact Us</b></a>
+          </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li class="nav-item">
+            <a class="nav-link" href="Careers.html"><b id="h3">Careers</b></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!--  -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav class="navbar">
+
+        <div class="" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" id="o1"><b>Home</b></a>
+            </li>
+
+            <li class="nav-item dropdown" id="o3">
+
+              <button class="btn  btn-sm" type="button">
+                <a class="nav-link active" href="A1.html" id="o2"><b>About Us</b></a>
+              </button>
+              <button type="button" class="btn btn-sm  dropdown-toggle-split" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span style="padding-left: 90px; font-size:30px;" id="o2"><i class="bi bi-plus"></i></span>
+              </button>
+              <ul class="dropdown-menu px-2">
+                <li><a class="nav-link" href="A1.html" id="o4"><b>Paras Group</b></a></li>
+                <li><a class="nav-link" href="A2.html" id="o4"><b>Board of Directors</b></a></li>
+                <li><a class="nav-link" href="A3.html" id="o4"><b>Facilities</b></a></li>
+                <li><a class="nav-link" href="A4.html" id="o4"><b>Awards</b></a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown" id="o3">
+              <button class="btn  btn-sm" type="button">
+                <a class="nav-link active" href="" id="o2"><b>Our Products</b></a>
+              </button>
+              <button type="button" class="btn btn-sm  dropdown-toggle-split" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span style="padding-left: 60px; font-size: 30px;" id="o2"><i class="bi bi-plus"></i></span>
+              </button>
+              <ul class="dropdown-menu">
+
+                <li class="nav-item">
+                  <button class="btn  btn-sm" type="button" style="display: flex;">
+                    <a class="nav-link" href="O1.html" id="o4"><b>Plumbing Systems <span
+                          style="padding-left: 60px; margin-top: 5px;"><i class="bi bi-plus"></i></span></b></a>
+                  </button>
+
+                  <ul class="dropdown-menu dropdown-submenu ">
+                    <li><a class="nav-link" href="O2.html" id="o5">CPVC Plumbing System</a></li>
+                    <li><a class="nav-link" href="O3.html" id="o5">uPVC Pipes & Fittings</a></li>
+                    <li><a class="nav-link" href="O4.html" id="o5">uPVC SWR DRAINAGE SYSTEM</a></li>
+                    <li><a class="nav-link" href="O5.html" id="o5">Eco Drain Underground Drainage System</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <button class="btn  btn-sm" type="button">
+                    <a class="nav-link" href="O6.html" id="o4"><b>Agriculture Applications <span
+                          style="padding-left: 20px;"><i class="bi bi-plus"></i></span></b></a>
+                  </button>
+
+                  <ul class="dropdown-menu dropdown-submenu ">
+                    <li><a class="nav-link" href="O7.html" id="o5">PVC Pipes & Fittings</a></li>
+                    <li><a class="nav-link" href="O8.html" id="o5">Drip Irrigation System</a></li>
+                    <li><a class="nav-link" href="O9.html" id="o5">Sprinkler Irrigation System</a></li>
+                    <li><a class="nav-link" href="O10.html" id="o5">Column Pipes for Submersible Pumps</a></li>
+                    <li><a class="nav-link" href="O11.html" id="o5">Casing Pipes</a></li>
+                    <li><a class="nav-link" href="O12.html" id="o5">HDPE Pipes</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <button class="btn  btn-sm" type="button">
+                    <a class="nav-link" href="O13.html" id="o4"><b>Hose Pipes <span style="padding-left: 110px;"><i
+                            class="bi bi-plus"></i></span></b></a>
+                  </button>
+
+                  <ul class="dropdown-menu dropdown-submenu ">
+                    <li><a class="nav-link" href="O14.html" id="o5">Soft Garden Tubing Pipes</a></li>
+                    <li><a class="nav-link" href="O15.html" id="o5">PVC Suction Pipes</a></li>
+                    <li><a class="nav-link" href="O16.html" id="o5">PVC Braided Pipes</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <button class="btn  btn-sm" type="button">
+                    <a class="nav-link" href="O17.html" id="o4"><b>Agriculture Implements <span
+                          style="padding-left: 25px;"><i class="bi bi-plus"></i></span></b></a>
+                  </button>
+
+                  <ul class="dropdown-menu dropdown-submenu ">
+                    <li><a class="nav-link" href="O18.html" id="o5">Paras Plough Four Bullocks</a></li>
+                    <li><a class="nav-link" href="O19.html" id="o5">Paras Balraj Plough</a></li>
+                    <li><a class="nav-link" href="O20.html" id="o5">Paras Plough Ajeet</a></li>
+                    <li><a class="nav-link" href="O21.html" id="o5">Paras Chaff Cutter</a></li>
+                    <li><a class="nav-link" href="O22.html" id="o5">Paras Kakari</a></li>
+                    <li><a class="nav-link" href="O23.html" id="o5">Paras One Furrow - Reversible Plough</a></li>
+                    <li><a class="nav-link" href="O24.html" id="o5">Paras Two Furrow - Reversible Plough</a></li>
+                    <li><a class="nav-link" href="O25.html" id="o5">Paras Leveller (Farandi)</a></li>
+                    <li><a class="nav-link" href="O26.html" id="o5">Paras Two Furrow Surry Ridger</a></li>
+                    <li><a class="nav-link" href="O27.html" id="o5">Paras Panji (Heavy Duty)</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <button class="btn  btn-sm" type="button">
+                    <a class="nav-link" href="O28.html" id="o4"><b>Electrical Pipes <span style="padding-left: 85px;"><i
+                            class="bi bi-plus"></i></span></b></a>
+                  </button>
+
+                  <ul class="dropdown-menu dropdown-submenu ">
+                    <li><a class="nav-link" href="O29.html" id="o5">Conduit Pipes & Fittings</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <button class="btn  btn-sm" type="button">
+                    <a class="nav-link" href="O30.html" id="o6"><b>Blow Moulding Water Storage Tank </b></a>
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn  btn-sm" type="button">
+                    <a class="nav-link" href="O31.html" id="o7"><b>Household Products</b></a>
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn  btn-sm" type="button">
+                    <a class="nav-link" href="O32.html" id="o7"><b>Cleaning Products </b></a>
+                  </button>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="Contact Us.html" id="o1"><b>Contact Us</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Careers.html" id="o1"><b>Careers</b></a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    </nav>
+  </div> <br><br>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-6  border-left">
+        <h1 class="h1 text-center">Casing Pipes</h1> <br><br>
+        <img src="o11.png" style="margin-left: 100px; width:60%; height:300px;" id="i1">
+
+        <div class="row">
+          <div class="col"> <br><br>
+            <p class="d-inline-flex gap-1">
+              <button class="btn btn-primary" type="button" data-bs-target=".c1" aria-expanded="false"
+                aria-controls="c1" id="s1">
+                About Product
+              </button>
+
+              <button class="btn btn-primary" type="button" data-bs-target=".c2" aria-expanded="false"
+                aria-controls="c2" id="s2">
+                Standard & Specifications
+              </button>
+            </p>
+
+            <div class="c1"><br>
+              <div class="card card-body z-3" id="h4">
+                <p>The PARAS protector range of PVC plain casing and (Suitable for wells depth upto 250 meters)
+                  ribbed screen pipes is specially designed to ensure clean clear water from bore wells, whether shallow
+                  or deep.
+                  The Protector range is manufactured as per IS 12818 and DIN 4925 standards. Like other pipes, these
+                  casing
+                  pipes are easy to install. The threaded ends ensure that the pipes can be screwed on to each other,
+                  without the
+                  use of cement or adhesives.</p>
+
+                <b>Standards & Specifications : </b>
+                <p>IS 12818 : 2010 - Specification for
+                  uPVC Screen & Casing Pipes for
+                  Bore / Tubewell </p>
+
+                <b>Material : </b>
+                <p>uPVC Compound Meet the
+                  requirements of IS : 10148 </p>
+
+                <b>Sizes</b>
+                <p>Casing Medium (CM) - 35mm to 200mm
+                  Casing Shallow (CS) - 150mm to 200mm
+                  Medium Well Screen (RMS) - 100mm to 200mm
+                </p>
+
+                <b>Length : </b>
+                <p>3 Mts. & 6 Mtr.</p>
+
+                <b>Colour</b>
+                <p>Pipe Colour : Blue</p>
+
+
+              </div>
+            </div>
+
+            <div class="c2">
+              <div class="card card-body" id="h4">
+                <img src="T11.png" alt="">
+                <img src="T11b.png" alt="">
+              </div>
+            </div>
+
+            <script>
+              $(document).ready(function () {
+
+                $('#s1').click(function () {
+                  $('.c1').show()
+                  $('.c2').hide()
+                })
+
+                $('#s2').click(function () {
+                  $('.c1').hide()
+                  $('.c2').show()
+                })
+
+              })
+            </script>
+
+            <div> <br><br>
+              <h2 style="width: 300px; border-bottom: 5px solid brown;">Product Catalogue :-</h2>
+              <a href="Paras-Catalogue-All-products.pdf" download=""><img src="l8.png" alt="" width="250px"
+                  height="130px"></a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-1" style="border-right: 1px solid rgb(216, 215, 215);"></div> <br><br><br>
+
+      <div class="col-sm-3 " style="padding-left: 50px;">
+        <h1 style="width: 250px; border-bottom: 5px solid brown;">Our Products</h1>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header border-bottom-2px">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                <a class="nav-link" href="O1.html" id="o5"><b>Plumbing Systems</b></a>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body ">
+                <a class="nav-link" href="O2.html" id="o5">CPVC Plumbing System</a> <br>
+                <a class="nav-link" href="O3.html" id="o5">uPVC Plumbing System</a> <br>
+                <a class="nav-link" href="O4.html" id="o5">uPVC SWR DRAINAGE SYSTEM</a> <br>
+                <a class="nav-link" href="O5.html" id="o5">Eco Drain Underground Drainage System</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <a class="nav-link" href="O6.html" id="o5"><b>Agriculture Application</b></a>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <a class="nav-link" href="O7.html" id="o5">PVC Pipes & Fittings</a> <br>
+                <a class="nav-link" href="O8.html" id="o5">Drip Irrigation System</a> <br>
+                <a class="nav-link" href="O9.html" id="o5">Sprinkler Irrigation System</a> <br>
+                <a class="nav-link" href="O10.html" id="o5">Column Pipes for Submersible Pumps</a> <br>
+                <a class="nav-link" href="O11.html" id="o5">Casing Pipes</a> <br>
+                <a class="nav-link" href="O12.html" id="o5">HDPE Pipes</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <a class="nav-link" href="O13.html" id="o5"><b>Hose Pipes</b></a>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <a class="nav-link" href="O14.html" id="o5">Soft Garden Tubing Pipes</a> <br>
+                <a class="nav-link" href="O15.html" id="o5">PVC Sucrion Pipes</a> <br>
+                <a class="nav-link" href="O16.html" id="o5">PVC Braided Pipes</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <a class="nav-link" href="O17.html" id="o5"><b>Electrical</b></a>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <a class="nav-link" href="O18.html" id="o5">Conduit Pipes & Fittings</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <a class="nav-link" href="O19.html" id="o5"><b>Agriculture Implements</b></a>
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <a class="nav-link" href="O20.html" id="o5">Paras Plough Four Bullocks </a> <br>
+                <a class="nav-link" href="O21.html" id="o5">Paras Balraj Plough </a> <br>
+                <a class="nav-link" href="O22.html" id="o5">Paras Plough Ajeet </a> <br>
+                <a class="nav-link" href="O23.html" id="o5">Paras Chaff Cutter </a> <br>
+                <a class="nav-link" href="O24.html" id="o5">Paras Kakari </a> <br>
+                <a class="nav-link" href="O25.html" id="o5">Paras One Furrow - Reversible Plough </a> <br>
+                <a class="nav-link" href="O26.html" id="o5">Paras Two Furrow - Reversible Plough </a> <br>
+                <a class="nav-link" href="O27.html" id="o5">Paras Leveller (Farandi) </a> <br>
+                <a class="nav-link" href="O28.html" id="o5">Paras Two Furrow Surry Ridger </a> <br>
+                <a class="nav-link" href="O29.html" id="o5">Paras Panji (Heavy Duty) </a>
+              </div>
+            </div>
+          </div>
+          <div class="acc" style="padding-left: 20px; margin-top: 10px;">
+            <a class="nav-link" href="O30.html" id="o5"><b>Blow Moulding Water Storage Tank</b></a> <br>
+            <a class="nav-link" href="O31.html" id="o5"><b>Household Products</b></a> <br>
+            <a class="nav-link" href="O32.html" id="o5"><b>Cleaning Products</b></a>
+          </div>
+        </div> <br><br>
+        <div style="width: 400px; padding-left: 100px; border-top: 1px solid rgb(216, 215, 215);"> <br><br>
+          <h1 style="width: 150px; border-bottom: 5px solid brown;">Downloads</h1>
+          <a class="nav-link" href="Paras-Catalogue-All-products.pdf" download=""> <b style="color: red;">Click Here</b>
+          </a>
+          <b>Paras Products Catalogue 2019</b>
+        </div>
+      </div>
+      <!-- <div class="col"></div> -->
+    </div>
+  </div> <br><br><br><br><br>
+
+  <div class="c bg-dark">
+    <div class="container">
+      <div class="row bg-dark text-white">
+        <div class="col-sm-5 text-white"><br><br>
+          <img src="paras logo.png" alt="" width="200px" height="70px"> <br><br>
+          <p> A Touch of Excellence - Complete Solution of Plumbing, <br>Piping, Drainage, Water Tanks, Agriculture,
+            Electrical, <br> Household & Cleaning Products Under one Roof..".</p> <br>
+          <button style="background-color: rgb(171, 53, 53); color: white;"> Read More</button>
+        </div>
+        <div class="col-sm-3 text-white"> <br><br>
+          <a class="nav-link" href="index.html" id="o5"><b>Home</b></a> <br>
+          <a class="nav-link" href="A1.html" id="o5"><b>About Us</b></a> <br>
+          <a class="nav-link" href="A4.html" id="o5"><b>Awards</b></a> <br>
+          <a class="nav-link" href="Contact Us.html" id="o5"><b>Contact</b></a> <br>
+          <a class="nav-link" href="Careers.html" id="o5"><b>Careers</b></a>
+        </div>
+
+        <div class="col-sm-4 text-white"> <br><br>
+          <div class="g4">
+            <h5>Address : </h5>
+            <p>Paras Group of Companies, Bothara Compound. Industrial <br> Estate. Nagar-Pune Road, Ahmednagar -
+              414005.(M.S.) <br> India.</p> <br>
+
+            <h5>Email :</h5>
+            <p>paras@parasgroup.net</p> <br>
+
+            <h5>Phone number :</h5>
+            <p>+91 - 241 - 2551932 / 2551127 / 2551906 </p>
+          </div>
+          <div class="g5">
+            <ion-icon name="logo-facebook" id="g6"></ion-icon>
+            <ion-icon name="logo-twitter" id="g6"></ion-icon>
+            <ion-icon name="logo-youtube" id="g6"></ion-icon>
+            <ion-icon name="logo-linkedin" id="g6"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
